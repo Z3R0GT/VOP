@@ -1,0 +1,2083 @@
+{
+"1": {
+"name": "Mansion",
+"vec": [
+120,
+29
+],
+"abs": "map",
+"id": 1,
+"chr": "#",
+"coll": [
+"&"
+],
+"node_lst": {
+"obj": [
+{
+"name": "moneda de oro",
+"vec": [
+6,
+16
+],
+"abs": "obj",
+"id": 1,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+12,
+17
+],
+"abs": "obj",
+"id": 2,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+18,
+13
+],
+"abs": "obj",
+"id": 3,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+24,
+15
+],
+"abs": "obj",
+"id": 4,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+9,
+12
+],
+"abs": "obj",
+"id": 5,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+18,
+13
+],
+"abs": "obj",
+"id": 6,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+23,
+15
+],
+"abs": "obj",
+"id": 7,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+22,
+17
+],
+"abs": "obj",
+"id": 8,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+27,
+13
+],
+"abs": "obj",
+"id": 9,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+15,
+15
+],
+"abs": "obj",
+"id": 10,
+"chr": "k",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+17,
+16
+],
+"abs": "obj",
+"id": 11,
+"chr": "k",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+8,
+18
+],
+"abs": "obj",
+"id": 12,
+"chr": "k",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+6,
+18
+],
+"abs": "obj",
+"id": 13,
+"chr": "k",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+20,
+19
+],
+"abs": "obj",
+"id": 14,
+"chr": "k",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+17,
+19
+],
+"abs": "obj",
+"id": 15,
+"chr": "k",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+27,
+16
+],
+"abs": "obj",
+"id": 16,
+"chr": "k",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+92,
+11
+],
+"abs": "obj",
+"id": 17,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+107,
+19
+],
+"abs": "obj",
+"id": 18,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+89,
+16
+],
+"abs": "obj",
+"id": 19,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+108,
+19
+],
+"abs": "obj",
+"id": 20,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+108,
+12
+],
+"abs": "obj",
+"id": 21,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+93,
+17
+],
+"abs": "obj",
+"id": 22,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+112,
+12
+],
+"abs": "obj",
+"id": 23,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+111,
+12
+],
+"abs": "obj",
+"id": 24,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+88,
+15
+],
+"abs": "obj",
+"id": 25,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+111,
+11
+],
+"abs": "obj",
+"id": 26,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+101,
+19
+],
+"abs": "obj",
+"id": 27,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+87,
+18
+],
+"abs": "obj",
+"id": 28,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+92,
+17
+],
+"abs": "obj",
+"id": 29,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+92,
+15
+],
+"abs": "obj",
+"id": 30,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+86,
+15
+],
+"abs": "obj",
+"id": 31,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+98,
+15
+],
+"abs": "obj",
+"id": 32,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+101,
+17
+],
+"abs": "obj",
+"id": 33,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+106,
+14
+],
+"abs": "obj",
+"id": 34,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+106,
+17
+],
+"abs": "obj",
+"id": 35,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+94,
+2
+],
+"abs": "obj",
+"id": 36,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+102,
+5
+],
+"abs": "obj",
+"id": 37,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+94,
+5
+],
+"abs": "obj",
+"id": 38,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+113,
+2
+],
+"abs": "obj",
+"id": 39,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+110,
+7
+],
+"abs": "obj",
+"id": 40,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+103,
+2
+],
+"abs": "obj",
+"id": 41,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+91,
+6
+],
+"abs": "obj",
+"id": 42,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+42,
+14
+],
+"abs": "obj",
+"id": 43,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+33,
+13
+],
+"abs": "obj",
+"id": 44,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+37,
+14
+],
+"abs": "obj",
+"id": 45,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+40,
+16
+],
+"abs": "obj",
+"id": 46,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+31,
+13
+],
+"abs": "obj",
+"id": 47,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+40,
+19
+],
+"abs": "obj",
+"id": 48,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+34,
+16
+],
+"abs": "obj",
+"id": 49,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+36,
+17
+],
+"abs": "obj",
+"id": 50,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+32,
+18
+],
+"abs": "obj",
+"id": 51,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+42,
+11
+],
+"abs": "obj",
+"id": 52,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+30,
+13
+],
+"abs": "obj",
+"id": 53,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de oro",
+"vec": [
+35,
+19
+],
+"abs": "obj",
+"id": 54,
+"chr": "N",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 15
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+37,
+14
+],
+"abs": "obj",
+"id": 55,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+40,
+11
+],
+"abs": "obj",
+"id": 56,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+34,
+16
+],
+"abs": "obj",
+"id": 57,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+41,
+11
+],
+"abs": "obj",
+"id": 58,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+30,
+14
+],
+"abs": "obj",
+"id": 59,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+32,
+12
+],
+"abs": "obj",
+"id": 60,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+38,
+19
+],
+"abs": "obj",
+"id": 61,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+40,
+17
+],
+"abs": "obj",
+"id": 62,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+},
+{
+"name": "moneda de plata",
+"vec": [
+39,
+17
+],
+"abs": "obj",
+"id": 63,
+"chr": "K",
+"map": [
+1,
+"Mansion"
+],
+"data": {
+"valor": 1
+}
+}
+],
+"cam": [
+{
+"name": "cam_1",
+"vec": [
+-5,
+-2
+],
+"abs": "cam",
+"id": 1,
+"chr": "BARRETO ALCANTARA IMANOL EL MAS GRANDE",
+"map": [
+1,
+"Mansion"
+],
+"transform": [
+10,
+5
+],
+"pla": [
+1,
+"pla_1"
+]
+}
+],
+"pla": [
+{
+"name": "pla_1",
+"vec": [
+40,
+25
+],
+"abs": "pla",
+"id": 1,
+"chr": "X",
+"map": [
+1,
+"Mansion"
+],
+"controll": [
+"w",
+"s",
+"a",
+"d"
+],
+"cifs": false,
+"expt_coll": [],
+"coll": [
+"&"
+],
+"global_x": 40,
+"global_y": 25,
+"inv": {
+"moneda de plata": [
+2,
+{
+"valor": 1
+}
+],
+"moneda de oro": [
+2,
+{
+"valor": 15
+}
+]
+}
+}
+],
+"npc": [],
+"stu": [
+{
+"name": "stu_1",
+"vec": [
+1,
+1
+],
+"abs": "stu",
+"id": 1,
+"chr": "&",
+"map": [
+1,
+"Mansion"
+],
+"transform": [
+116,
+20
+],
+"is_coll": true,
+"size": [
+[
+1,
+115,
+1
+],
+[
+1,
+115,
+18
+],
+[
+[
+1,
+115,
+1
+],
+[
+1,
+115,
+18
+]
+],
+[
+1,
+2,
+2
+],
+[
+1,
+2,
+3
+],
+[
+1,
+2,
+4
+],
+[
+1,
+2,
+5
+],
+[
+1,
+2,
+6
+],
+[
+1,
+2,
+7
+],
+[
+1,
+2,
+8
+],
+[
+1,
+2,
+9
+],
+[
+1,
+2,
+10
+],
+[
+1,
+2,
+11
+],
+[
+1,
+2,
+12
+],
+[
+1,
+2,
+13
+],
+[
+1,
+2,
+14
+],
+[
+1,
+2,
+15
+],
+[
+1,
+2,
+16
+],
+[
+1,
+2,
+17
+],
+[
+[
+1,
+2,
+2
+],
+[
+1,
+2,
+3
+],
+[
+1,
+2,
+4
+],
+[
+1,
+2,
+5
+],
+[
+1,
+2,
+6
+],
+[
+1,
+2,
+7
+],
+[
+1,
+2,
+8
+],
+[
+1,
+2,
+9
+],
+[
+1,
+2,
+10
+],
+[
+1,
+2,
+11
+],
+[
+1,
+2,
+12
+],
+[
+1,
+2,
+13
+],
+[
+1,
+2,
+14
+],
+[
+1,
+2,
+15
+],
+[
+1,
+2,
+16
+],
+[
+1,
+2,
+17
+]
+],
+[
+114,
+115,
+2
+],
+[
+114,
+115,
+3
+],
+[
+114,
+115,
+4
+],
+[
+114,
+115,
+5
+],
+[
+114,
+115,
+6
+],
+[
+114,
+115,
+7
+],
+[
+114,
+115,
+8
+],
+[
+114,
+115,
+9
+],
+[
+114,
+115,
+10
+],
+[
+114,
+115,
+11
+],
+[
+114,
+115,
+12
+],
+[
+114,
+115,
+13
+],
+[
+114,
+115,
+14
+],
+[
+114,
+115,
+15
+],
+[
+114,
+115,
+16
+],
+[
+114,
+115,
+17
+],
+[
+[
+114,
+115,
+2
+],
+[
+114,
+115,
+3
+],
+[
+114,
+115,
+4
+],
+[
+114,
+115,
+5
+],
+[
+114,
+115,
+6
+],
+[
+114,
+115,
+7
+],
+[
+114,
+115,
+8
+],
+[
+114,
+115,
+9
+],
+[
+114,
+115,
+10
+],
+[
+114,
+115,
+11
+],
+[
+114,
+115,
+12
+],
+[
+114,
+115,
+13
+],
+[
+114,
+115,
+14
+],
+[
+114,
+115,
+15
+],
+[
+114,
+115,
+16
+],
+[
+114,
+115,
+17
+]
+],
+[
+2,
+17,
+3
+],
+[
+[
+2,
+17,
+3
+]
+],
+[
+2,
+17,
+9
+],
+[
+[
+2,
+17,
+9
+]
+],
+[
+16,
+17,
+2
+],
+[
+16,
+17,
+3
+],
+[
+16,
+17,
+4
+],
+[
+16,
+17,
+5
+],
+[
+16,
+17,
+6
+],
+[
+16,
+17,
+7
+],
+[
+16,
+17,
+8
+],
+[
+16,
+17,
+9
+],
+[
+[
+16,
+17,
+2
+],
+[
+16,
+17,
+3
+],
+[
+16,
+17,
+4
+],
+[
+16,
+17,
+5
+],
+[
+16,
+17,
+6
+],
+[
+16,
+17,
+7
+],
+[
+16,
+17,
+8
+],
+[
+16,
+17,
+9
+]
+],
+[
+52,
+53,
+12
+],
+[
+52,
+53,
+13
+],
+[
+52,
+53,
+14
+],
+[
+52,
+53,
+15
+],
+[
+52,
+53,
+16
+],
+[
+52,
+53,
+17
+],
+[
+[
+52,
+53,
+12
+],
+[
+52,
+53,
+13
+],
+[
+52,
+53,
+14
+],
+[
+52,
+53,
+15
+],
+[
+52,
+53,
+16
+],
+[
+52,
+53,
+17
+]
+],
+[
+67,
+68,
+12
+],
+[
+67,
+68,
+13
+],
+[
+67,
+68,
+14
+],
+[
+67,
+68,
+15
+],
+[
+67,
+68,
+16
+],
+[
+67,
+68,
+17
+],
+[
+[
+67,
+68,
+12
+],
+[
+67,
+68,
+13
+],
+[
+67,
+68,
+14
+],
+[
+67,
+68,
+15
+],
+[
+67,
+68,
+16
+],
+[
+67,
+68,
+17
+]
+],
+[
+44,
+82,
+11
+],
+[
+[
+44,
+82,
+11
+]
+],
+[
+43,
+44,
+4
+],
+[
+43,
+44,
+5
+],
+[
+43,
+44,
+6
+],
+[
+43,
+44,
+7
+],
+[
+43,
+44,
+8
+],
+[
+43,
+44,
+9
+],
+[
+43,
+44,
+10
+],
+[
+43,
+44,
+11
+],
+[
+[
+43,
+44,
+4
+],
+[
+43,
+44,
+5
+],
+[
+43,
+44,
+6
+],
+[
+43,
+44,
+7
+],
+[
+43,
+44,
+8
+],
+[
+43,
+44,
+9
+],
+[
+43,
+44,
+10
+],
+[
+43,
+44,
+11
+]
+],
+[
+82,
+83,
+2
+],
+[
+82,
+83,
+3
+],
+[
+82,
+83,
+4
+],
+[
+82,
+83,
+5
+],
+[
+82,
+83,
+6
+],
+[
+82,
+83,
+7
+],
+[
+82,
+83,
+8
+],
+[
+82,
+83,
+9
+],
+[
+82,
+83,
+10
+],
+[
+82,
+83,
+11
+],
+[
+[
+82,
+83,
+2
+],
+[
+82,
+83,
+3
+],
+[
+82,
+83,
+4
+],
+[
+82,
+83,
+5
+],
+[
+82,
+83,
+6
+],
+[
+82,
+83,
+7
+],
+[
+82,
+83,
+8
+],
+[
+82,
+83,
+9
+],
+[
+82,
+83,
+10
+],
+[
+82,
+83,
+11
+]
+],
+[
+44,
+82,
+4
+],
+[
+[
+44,
+82,
+4
+]
+],
+[
+17,
+44,
+4
+],
+[
+[
+17,
+44,
+4
+]
+],
+[
+17,
+44,
+9
+],
+[
+[
+17,
+44,
+9
+]
+],
+[
+27,
+28,
+10
+],
+[
+27,
+28,
+11
+],
+[
+27,
+28,
+12
+],
+[
+27,
+28,
+13
+],
+[
+27,
+28,
+14
+],
+[
+27,
+28,
+15
+],
+[
+27,
+28,
+16
+],
+[
+27,
+28,
+17
+],
+[
+[
+27,
+28,
+10
+],
+[
+27,
+28,
+11
+],
+[
+27,
+28,
+12
+],
+[
+27,
+28,
+13
+],
+[
+27,
+28,
+14
+],
+[
+27,
+28,
+15
+],
+[
+27,
+28,
+16
+],
+[
+27,
+28,
+17
+]
+],
+[
+83,
+115,
+8
+],
+[
+[
+83,
+115,
+8
+]
+]
+]
+}
+]
+}
+}
+}

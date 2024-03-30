@@ -1,8 +1,11 @@
+from ..obj.tools.debug import _insert, print_debug
+
 import random as rn
 
-from ..obj.tools.debug import _insert
-
 class gen_pla:
+    """
+    Clase encargada para todo nodo que requiera moverse o sea interactivo
+    """
     def __start__(self,
                  EXPT_COLL,
                  CONTROLL,
@@ -29,7 +32,12 @@ class gen_pla:
 
         temp = self.vec
 
+        #error x2
+        c = -1
         while True:
+            if c == 10:
+                return print_debug("TIENE QUE AGREGAR ALMENOS UNA LETRA DE COLISIÓN")
+            c+= 1
             if self._apper_check():
                 break
             else:
@@ -50,7 +58,6 @@ class gen_pla:
         Verifica si la posición donde aparecera no tiene un caracter de colisión, sino,
         aleatoriamente buscara uno que no lo tenga
         """
-
         for coll in self.coll:
             if coll == self.map.square[self.vec[1]][self.vec[0]]:
                 self.vec[0] += rn.randrange(-1, 2)
@@ -91,6 +98,9 @@ class gen_pla:
         self.global_x += self.input[0]
         self.global_y += self.input[1]
 
+        self._edit_meta("global_x", ..., self.global_x)
+        self._edit_meta("global_y", ..., self.global_y)
+
         self.map.square[self.global_y] = _insert(
             self.map.square[self.global_y],
             self.character,
@@ -102,6 +112,6 @@ class gen_pla:
         """
         Información importante respecto al objeto que se mueve
         """
-        n = f"¿{self.name} ({self.abs}) pasará?: {self._check_if(self.coll)[0]} Coordenadas de entrada: (X:{self.input[0]};Y:{self.input[1]}) Posición actual: (X:{self.global_x};Y:{self.global_y})"
+        n = f"¿{self.name} ({self.abs}), Coordenadas de entrada: (X:{self.input[0]};Y:{self.input[1]}) Posición actual: (X:{self.global_x};Y:{self.global_y})"
         #sb.run([sys.executable, "-c", f"print('{n}')"])
         print(n)

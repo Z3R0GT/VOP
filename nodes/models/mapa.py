@@ -4,6 +4,10 @@ from .obj.gen_wns import gen_wns
 from .obj.tools.debug import print_debug, _insert
 
 class Mapa(gen_obj, gen_wns):
+    """
+    Lienzo en el que puedes agregar nodos tanto visible como no, usado
+    también como "Mundo" donde ocurre todo
+    """
     def __init__(self, 
                  X, 
                  Y, 
@@ -19,10 +23,10 @@ class Mapa(gen_obj, gen_wns):
         
         self.node_list = {
             "obj": [],
-            "cam": [],
+            "stu": [],
             "pla": [],
-            "npc": [],
-            "stu": []
+            "cam": [],
+            "npc": []
             }
         
         self._set_meta("coll", self.coll)
@@ -32,9 +36,15 @@ class Mapa(gen_obj, gen_wns):
         self._create_line_num()
 
     def _check_own(self, node) -> bool:
+        """
+        Verifica si un cierto nodo pertecene al mapa
+        """
         return self.id != node.meta["map"][0]
     
     def erase_coll(self, obj):
+        """
+        Elimina una letra con la que otros nodos puedan chocar
+        """
         if self._check_own(obj):
             return
         
@@ -45,7 +55,10 @@ class Mapa(gen_obj, gen_wns):
                 self.coll[c] = f"{obj.abs}_{self.id}"
         self._set_meta("coll", self.coll)
     
-    def set_coll(self, obj):
+    def add_coll(self, obj):
+        """
+        Agrega una letra con la que otros nodos puedan chocar
+        """
         if self._check_own(obj):
             return
         
@@ -62,6 +75,10 @@ class Mapa(gen_obj, gen_wns):
         self._set_meta("coll", self.coll)
         
     def add_node(self, node, exception:bool=False):
+        """
+        Agrega un nodo dentro del lienzo del mapa o "meta" interno
+        (se aplica cada objeto visible no boton o pagina/page)
+        """
         if self._check_own(node):
             print_debug(f"{node.name} no pertenece a {self.name}")
             return
@@ -70,19 +87,19 @@ class Mapa(gen_obj, gen_wns):
             if self.vec[0] < node.vec[0] or self.vec[1] < node.vec[1]:
                 print_debug("Nodo escede los limites")
                 return
-            ##TODO: REESCRIBIR CON EL CODIGO ORIGINAL
-            c = -1
+            
+            c = 0
             for y in range(self.vec[1]):
                 if y in range(node.vec[1], (node.vec[1] + node.transform[1])):
                     c += 1
                     for x in range(self.vec[0]):
-                        if x in range(node.vec[0], (node.vec[0]+ node.transform[0])):
+                        if x in range(node.vec[0], (node.vec[0] + node.transform[0])):
                             self.square[y] = _insert(
                                 self.square[y],
-                                node.square[c],
+                                node.square[(c - 1)],
                                 node.vec[0],
                                 (node.transform[0] + 1)
-                                )
+                            )
             ck = True
             
         elif node.abs == "obj":
@@ -106,7 +123,8 @@ class Mapa(gen_obj, gen_wns):
                 self._set_meta("node_lst", self.node_list)
             
             self._create_pre_view()
-    """      
+    """   
+    #1.4: NO EXISTE YA QUE SE REQUIERE PULIR ALGUNAS COSAS
     def del_node(self, node):
         if self._check_own(node):
             return

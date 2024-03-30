@@ -4,8 +4,13 @@ from .const.const import DEV
 from .tools.debug import _insert
 
 class gen_wns:
-    
+    """
+    Clase base para todo nodo que requiera aparecer de manera más notable en/fuera del mapa
+    """
     def __wns__(self):
+        """
+        atributos requeridos para ser un cuadrado
+        """
         self.square = []
         self.pre_view = ""
         
@@ -14,6 +19,9 @@ class gen_wns:
 #####################################################
 
     def _create_pre_view(self):
+        """
+        usamos el atributo ".square" para crear el cuadrado
+        """
         self._erase_pre_view()
         
         for line in self.square:
@@ -39,18 +47,31 @@ class gen_wns:
             self._erase_pre_view()
 
     def _create_line_num(self):
+        """
+        Crea una linea extra debajo de la pre-visualización con números que representan la posición
+        de la parte interna del nodo en la coordenada X.
+        """
         self._erase_pre_view()
         
         line_all = ""
         line_num = ""
         nro = 0
-        for num in range(self.vec[0]):
-            line_all += f"{(num % 10)}"
-            if line_all[-1] == "0":
-                line_num += f"{nro}"
-                nro += 1
-            else:
-                line_num += " "
+        try:
+            for num in range(self.transform[0]):
+                line_all += f"{(num % 10)}"
+                if line_all[-1] == "0":
+                    line_num += f"{nro}"
+                    nro += 1
+                else:
+                    line_num += " "
+        except:
+            for num in range(self.vec[0]):
+                line_all += f"{(num % 10)}"
+                if line_all[-1] == "0":
+                    line_num += f"{nro}"
+                    nro += 1
+                else:
+                    line_num += " "
         
         self.square.append(line_all)
         self.square.append(line_num)
@@ -112,6 +133,9 @@ class gen_wns:
 
 
 class gen_ui:
+    """
+    Clase general para todo nodo que sea parte de la interfaz de usuario (User Interfaze)
+    """
     
 #####################################################
 #                      TEXT ZONE                    #
@@ -121,7 +145,12 @@ class gen_ui:
                     sector:Literal["CENTER", "UPPER", "LOWER", "CUSTOM"],
                     line=("X", "Y"),
                     chk=True):
+        """
+        Agrega texto dentro del cuadrado, si se de los limites, entonces copiara en la linea 
+        siguiente la continuación.
+        """
         
+        #TODO: REQUIERE TRABAJAR AQUI
         def __recursive(ver):
             temp = []
             new = ""
@@ -158,6 +187,7 @@ class gen_ui:
             if chk:
                 line = (1, self.vec[1]-2)
             ver = self._edit_line([line], text)
-            print("ME DA PEREZA COLOCAR PARA QUE AGREGUE UNA NUEVA LINEA AUTOMATICAMENTE SI?, COMPRENDE")
+            if DEV[0]:
+                print("ME DA PEREZA COLOCAR PARA QUE AGREGUE UNA NUEVA LINEA AUTOMATICAMENTE SI?, COMPRENDE")
 
         self._create_pre_view()

@@ -1,37 +1,52 @@
 from typing_extensions import Literal
 
-from nodes.models.obj.const.const import DEFAULT
+from .mapa import Mapa
 
+from .obj.const.const import DEFAULT, N_NUM, N_ABS
 from .obj.tools.debug import _insert
 
-from .obj.gen_obj import gen_obj, N_NUM, N_ABS
+from .obj.gen_obj import gen_obj 
 from .obj.gen_wns import gen_wns
 
 class Structure(gen_obj, gen_wns):
+    """
+    Es un cuadrado; que, internamente tiene una pared en sus limites, puedes agregar
+muros (solo en forma de linea) con ".create_geomtry()", o insertar puertas con ".create_door()". 
+
+OJO: Cada cambio con alguna de las propiedades anteriores, se hace internamente, 
+no puede sobre pasar los limites establecidos al crearlo. 
+    """
     def __init__(self, 
-                 MAP,
-                 X, 
-                 Y, 
-                 SZ_X,
-                 SZ_Y,
-                 CHR, 
+                 MAP:Mapa,
+                 X:int, 
+                 Y:int, 
+                 SZ_X:int,
+                 SZ_Y:int,
+                 CHR:str, 
                  IS_COLL:bool = False,
-                 NMO="") -> None:
+                 NMO:str="") -> None:
         N_NUM[3] += 1
         super().__init__(X, Y, CHR, N_ABS[3], N_NUM[3], NMO)
+        
         super().__map__(MAP)
         super().__wns__()
         super().__transform__(SZ_X, SZ_Y)
         
         self.is_coll = IS_COLL
         
-        self.__size = []
+        self._size = []
+        self._door = []
+        self._chr = []
         
+        #AGREGA EL CARACTER DE COLISIÓN AL MAPA ESPECIFICADO
         if self.is_coll:
             self.map.set_coll(self)
         
+        #CREA Y GUARDA LA NUEVA INFORMACIÓN
         self._set_meta("is_coll", self.is_coll)
-        self._set_meta("size", self.__size)
+        self._set_meta("size", self._size)
+        self._set_meta("_chr", self._chr)
+        self._set_meta("_door", self._door)
         
         self._create_square(self.transform)
         self._create_line_num()
@@ -44,7 +59,17 @@ class Structure(gen_obj, gen_wns):
                       LN_X_TO:int,
                       AUTO_APPLY:bool=True):
         """
-        Crea y aplica coordenadas más facilmente o retorna la coordenada en cuestión
+        Aplica lineas o cuadrados más facil y comprensiblemente que ".edit_geometry()"
+        TYPE      --> define la clase de operación para aplicar
+        
+        NOTA: las Y no pueden ser las mismas.
+        LN_Y_FROM --> Linea en Y desde... (minimo)
+        LN_Y_TO   --> Linea en Y hasta... (maximo)
+        
+        LN_X_FROM --> Line en X desde...  (minima)
+        LN_X_TO   --> Line en X hasta...  (maxima)
+        
+        AUTO_APPLY--> Forma en la que retorna o no la(s) coordenada(s) ingresadas
         """
         coord = []
         
@@ -70,20 +95,26 @@ class Structure(gen_obj, gen_wns):
 #####################################################
     def create_door(self, coods: list = [(0,0)], CHR =""):
         """
-        Crea una puerta con base a las coordenadas locales del objeto
+        Crea una puerta en una coodenada dentro de la "strutcture"
         """
+        self._door.append(coods)
+        
         if CHR == "":
+            self._chr.append(DEFAULT[3])
             self._edit_line(coods, DEFAULT[3])
         else:
+            self._chr.append(CHR)
             self._edit_line(coods, CHR)
-
+        
+        self._edit_meta("_chr", ..., self._chr)
+        self._edit_meta("_door", ..., self._door)
 
 #####################################################
 #  CONSEJO:  coord: list =[(FROM, TO, LINE)]        #
 #####################################################
     def edit_geometry(self, coord: list = [(0, 0, 0)]):
         """
-        Forma basica de crear lineas con coordenadas locales del objeto
+        Forma basica de crear lineas con coordenadas locales de "structure"
         """
         self._erase_pre_view()
         for in_ in range(len(coord)):
@@ -93,7 +124,7 @@ class Structure(gen_obj, gen_wns):
                         print(f"la linea ingresada es mayor a la establecida por el objeto \n \
                               INFO: GENERAL: {coord[in_]}")
                         coord[in_] = [coord[in_][0], coord[in_][1], self.transform[1] - 1]
-                    self.__size.append(coord[in_])
+                    self._size.append(coord[in_])
 
                     self.square[coord[in_][2]] = _insert(self.square[coord[in_][2]],
                                                               f"{self.character}" * (coord[in_][1] - coord[in_][0]),
@@ -107,7 +138,7 @@ class Structure(gen_obj, gen_wns):
                 print(
                     f"el N: {in_} comando entragado posee menos de 3 posiciones. \n \
                     INFO: {coord[in_]}")
-                
+        
         self.meta["size"].append(coord)
         self._create_pre_view()
         

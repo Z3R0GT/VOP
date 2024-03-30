@@ -2,6 +2,9 @@ from ..obj.const.const import DEFAULT
 
 
 class gen_move():
+    """
+    Clase general para todo objeto que requiera movimiento (sea por teclado o pre-programado)
+    """
     def __coords__(self):
         """
         Agrega coordenadas a objetos con base a su posición en el espacio
@@ -66,6 +69,9 @@ class gen_move():
         return chr_obj, nme_obj, dat_obj
 
     def __take_obj(self, info, check):
+        """
+        Agrega información al ".inv" del objeto
+        """
         n = 0
         for i in info[0]:
             n += 1

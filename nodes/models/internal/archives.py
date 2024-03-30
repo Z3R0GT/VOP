@@ -1,12 +1,13 @@
 from .admin_dir import *
 
-from os import getcwd, chdir, listdir, mkdir, path, remove
+from os import getcwd, chdir, listdir, path, remove
 
 cwd = getcwd()
 
 def _check_save():
-    #ERROR PRINCIPAL
-    
+    """
+    Verifica la ubicación de la carpeta "saves"
+    """
     if getcwd() == f"{cwd}\saves":
         return True
     else:

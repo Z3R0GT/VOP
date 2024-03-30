@@ -30,7 +30,7 @@ N_NUM = [0,
 
 N_WN = [10,     #0  LIM_FP
         0,      #1  FP
-        0.15,   #2  TIME_PER_FRAME
+        0.15,   #2  TIME_PER_FRAME 0.15
         5       #3  TIME_PER_CHECK
         ]  
 

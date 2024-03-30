@@ -1,6 +1,10 @@
 from .obj.gen_obj import gen_obj, N_ABS, N_NUM
 
 class Object(gen_obj):
+    """
+    nodo con la capacidad de ser percibido por algún otro que nodo que 
+    pueda moverse y tenga un ".inv" disponible
+    """
     def __init__(self,
                  MAP,
                  X, 
@@ -18,13 +22,13 @@ class Object(gen_obj):
     
     def _refresh_meta(self):
         """
-        actualiza el "meta" respecto a "data"
+        actualiza el "meta" de "data"
         """
         self._set_meta("data", self.data)
 
     def set_data(self, nme: str, *arg):
         """
-        Agrega/Edita nueva informacion a "data"
+        Agrega/Edita nueva informacion de "data"
         """
         self.data[nme] = arg
         self._refresh_meta()

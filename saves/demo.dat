@@ -1,0 +1,335 @@
+{
+ "1": {
+  "name": "n",
+  "vec": [
+   21,
+   11
+  ],
+  "abs": "map",
+  "id": 1,
+  "chr": "#",
+  "coll": [
+   "&"
+  ],
+  "node_lst": {
+   "obj": [
+    {
+     "name": "moneda",
+     "vec": [
+      4,
+      4
+     ],
+     "abs": "obj",
+     "id": 1,
+     "chr": "$",
+     "map": [
+      1,
+      "n"
+     ],
+     "data": {
+      "valor": 3.0
+     }
+    },
+    {
+     "name": "moneda",
+     "vec": [
+      5,
+      4
+     ],
+     "abs": "obj",
+     "id": 2,
+     "chr": "$",
+     "map": [
+      1,
+      "n"
+     ],
+     "data": {
+      "valor": 3.0
+     }
+    },
+    {
+     "name": "moneda",
+     "vec": [
+      4,
+      5
+     ],
+     "abs": "obj",
+     "id": 3,
+     "chr": "$",
+     "map": [
+      1,
+      "n"
+     ],
+     "data": {
+      "valor": 3.0
+     }
+    },
+    {
+     "name": "moneda",
+     "vec": [
+      4,
+      6
+     ],
+     "abs": "obj",
+     "id": 4,
+     "chr": "$",
+     "map": [
+      1,
+      "n"
+     ],
+     "data": {
+      "valor": 3.0
+     }
+    },
+    {
+     "name": "moneda",
+     "vec": [
+      5,
+      6
+     ],
+     "abs": "obj",
+     "id": 4,
+     "chr": "$",
+     "map": [
+      1,
+      "n"
+     ],
+     "data": {
+      "valor": 3.0
+     }
+    },
+    {
+     "name": "moneda",
+     "vec": [
+      4,
+      7
+     ],
+     "abs": "obj",
+     "id": 5,
+     "chr": "$",
+     "map": [
+      1,
+      "n"
+     ],
+     "data": {
+      "valor": 3.0
+     }
+    },
+    {
+     "name": "moneda",
+     "vec": [
+      5,
+      7
+     ],
+     "abs": "obj",
+     "id": 6,
+     "chr": "$",
+     "map": [
+      1,
+      "n"
+     ],
+     "data": {
+      "valor": 3.0
+     }
+    },
+    {
+     "name": "moneda",
+     "vec": [
+      6,
+      7
+     ],
+     "abs": "obj",
+     "id": 7,
+     "chr": "$",
+     "map": [
+      1,
+      "n"
+     ],
+     "data": {
+      "valor": 3.0
+     }
+    },
+    {
+     "name": "moneda",
+     "vec": [
+      7,
+      7
+     ],
+     "abs": "obj",
+     "id": 8,
+     "chr": "$",
+     "map": [
+      1,
+      "n"
+     ],
+     "data": {
+      "valor": 3.0
+     }
+    }
+   ],
+   "stu": [
+    {
+     "name": "stu_1",
+     "vec": [
+      3,
+      3
+     ],
+     "abs": "stu",
+     "id": 9,
+     "chr": "&",
+     "map": [
+      1,
+      "n"
+     ],
+     "transform": [
+      6,
+      6
+     ],
+     "is_coll": true,
+     "size": [],
+     "_chr": [
+      "M"
+     ],
+     "_door": [
+      [
+       [
+        5,
+        2
+       ]
+      ]
+     ],
+     "_sz": [
+      1
+     ]
+    },
+    {
+     "name": "stu_2",
+     "vec": [
+      13,
+      8
+     ],
+     "abs": "stu",
+     "id": 2,
+     "chr": "&",
+     "map": [
+      1,
+      "n"
+     ],
+     "transform": [
+      6,
+      4
+     ],
+     "is_coll": true,
+     "size": [],
+     "_chr": [
+      "M"
+     ],
+     "_door": [
+      [
+       [
+        3,
+        0
+       ]
+      ]
+     ],
+     "_sz": [
+      1
+     ]
+    },
+    {
+     "name": "stu_3",
+     "vec": [
+      12,
+      1
+     ],
+     "abs": "stu",
+     "id": 3,
+     "chr": "&",
+     "map": [
+      1,
+      "n"
+     ],
+     "transform": [
+      6,
+      4
+     ],
+     "is_coll": true,
+     "size": [],
+     "_chr": [
+      "M"
+     ],
+     "_door": [
+      [
+       [
+        3,
+        4
+       ]
+      ]
+     ],
+     "_sz": [
+      1
+     ]
+    }
+   ],
+   "pla": [
+    {
+     "name": "pla_1",
+     "vec": [
+      14,
+      6
+     ],
+     "abs": "pla",
+     "id": 1,
+     "chr": "X",
+     "map": [
+      1,
+      "n"
+     ],
+     "controll": [
+      "w",
+      "s",
+      "a",
+      "d"
+     ],
+     "cifs": false,
+     "expt_coll": [
+      ""
+     ],
+     "coll": [
+      "",
+      "&"
+     ],
+     "global_x": 14,
+     "global_y": 6,
+     "inv": {}
+    }
+   ],
+   "cam": [
+    {
+     "name": "cam_1",
+     "vec": [
+      -50,
+      -20
+     ],
+     "abs": "cam",
+     "id": 1,
+     "chr": "BARRETO ALCANTARA IMANOL EL MAS GRANDE",
+     "map": [
+      1,
+      "n"
+     ],
+     "transform": [
+      100,
+      50
+     ],
+     "pla": [
+      1,
+      "pla_1"
+     ],
+     "lck": true
+    }
+   ],
+   "npc": []
+  }
+ }
+}

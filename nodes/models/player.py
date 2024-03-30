@@ -1,4 +1,3 @@
-from tkinter import BUTT
 import pynput as pn
 
 from .obj.tools.debug import erase_screen
@@ -11,10 +10,12 @@ from .pla.gen_move import *
 
 from .obj.gen_obj import gen_obj, N_NUM, N_ABS, DEFAULT
 
-#FALTA CAMBIAR LA ENTRADA DE LAS TECLAS
-
 class Player(gen_obj, gen_pla, gen_move):
-
+    """
+    Una nodo especial que puede ser controlado por el teclado, en la 
+    1.4 solo puede ser 1 jugador ademas que tiene limitaciones como lo 
+    que puede o no cargar
+    """
     def __init__(self,
                  MAP,
                  X: int,
@@ -38,12 +39,13 @@ class Player(gen_obj, gen_pla, gen_move):
 
     def __on_press(self, key):
         """
-        cuando la tecla es presionada, sumara o actualizara sea
-        .__in_x y .__in_y las entrada
+        cuando la tecla es presionada
         """
         try:
             if key.char == "i":
                 if not DEFAULT[1][2]:
+                    #MENU DE INVENTARIO
+                    set_console_font()
                     DEFAULT[1][2] = True
                     pgn = Page(CUR[0][0].vec[0], CUR[0][0].vec[1], CUR[0][0].character)
                     pgn.create_text("Objetos en inventario:", "UPPER")
@@ -61,14 +63,15 @@ class Player(gen_obj, gen_pla, gen_move):
                     erase_screen()
                     DEFAULT[1][2] = False
             else:
+                #GENERA MOVIMIENTO
                 self._move_body(key.char)
+                
         except AttributeError:
-            # Caracteres especiales (ESC, SPACE)
-            #PUEDE SER CAMBIADO
             if key == pn.keyboard.Key.esc:
                 DEFAULT[1][1] = True
             elif key == pn.keyboard.Key.space:
                 if not DEFAULT[1][2]:
+                    #MENU DE PAUSE (REQUIERE SOLICIONAR)
                     DEFAULT[1][2] = True
                     
                     erase_screen()
@@ -106,5 +109,6 @@ class Player(gen_obj, gen_pla, gen_move):
         hasta el final de la ejecución
         """
         lst = self.key.Listener(on_press=self.__on_press, on_release=self.__on_realease)
+        #AQUI EMPIEZA EL PROGRAMA Y SU INFINITA EJECUCIÓN
         lst.start()
        

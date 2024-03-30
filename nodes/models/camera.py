@@ -2,6 +2,19 @@ from .obj.gen_obj import gen_obj, N_ABS, N_NUM, DEFAULT, N_WN, CUR, DEV
 from .obj.gen_wns import gen_wns
 
 class Camera(gen_obj, gen_wns):
+    """
+    Encargada de mostrar todo lo correspondiente dentro de un mapa, usando al 
+    jugador como punto 0 y empezando desde allí a pintar todo (solo es un cuadrado)
+    
+    NOTA: la posición trabaja según el principio anterior y ademas usa
+    -X; X; Y; -Y
+    (obligatoriamente el número debe seguir el signo de la coordenada)
+    
+    COORD[-X, X, Y, -Y] --> Posición en el plano del mapa
+    
+    LOCK                --> ¿La cama debe seguir al jugador?
+    
+    """
 #####################################################
 #       CONSEJO:  coord: list = [-X, X, -Y, Y]      #
 #####################################################
@@ -16,11 +29,17 @@ class Camera(gen_obj, gen_wns):
         super().__map__(MAP)
         super().__transform__(COORD[1], COORD[3])
 
-        CUR[1].append(self)
+        if len(CUR[1]) == 0:
+            CUR[1].append(self)
+        else:
+            for i in CUR[1]:
+                if i.name == self.name:
+                    CUR[1][i.id-1] == self
 
         self.focus = DEFAULT[0]
 
         self._set_meta("pla", (self.focus.id, self.focus.name))
+        self._set_meta("lck", LOCK)
         self.render_image(LOCK)
 
     def fp(self):
@@ -41,15 +60,15 @@ class Camera(gen_obj, gen_wns):
         self._erase_pre_view()
         self._erase_square()
 
-        #�ESTA MIRANDO?
+        #¿ESTA MIRANDO?
         if not is_lock:
             cur_ren_x = self.focus.global_x
             cur_ren_y = self.focus.global_y
         else:
             cur_ren_x = self.focus.vec[0]
             cur_ren_y = self.focus.vec[1]
-        
-        #CREA EL FOTOGRAMA
+
+        #CREA EL FOTOGRAMA  
         for y in range(self.map.vec[1]):
             if y in range(cur_ren_y + self.vec[1], cur_ren_y + self.transform[1]):
                 for x in range(self.map.vec[0]):
